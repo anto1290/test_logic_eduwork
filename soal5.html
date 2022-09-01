@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let puluhArry = [" Puluh", " Puluh Satu", " Puluh Dua", " Puluh Tiga", " Puluh Empat", " Puluh Lima",
+            " Puluh Enam",
+            " Puluh Tujuh", " Puluh Delapan", " Puluh Sembilan"
+        ];
+        let numberArray = ["Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam",
+            "Tujuh", "Delapan", "Sembilan"
+        ];
+
+        function angkaToString(str) {
+            let a = ("" + str).split('');
+            if (str <= 100 && a.length == 1) {
+                let angkaSatu = a[0]
+                console.log(numberArray[angkaSatu])
+            } else if (str <= 100 && a.length == 2) {
+                let angkaSatu = a[0]
+                let angkaDua = a[1]
+                console.log(numberArray[angkaSatu] + puluhArry[angkaDua])
+            } else if (str <= 100 && a.length == 3) {
+                console.log("Seratus")
+            } else {
+                console.log("input nilai 1 - 100")
+            }
+
+        }
+        angkaToString(223)
+    </script>
+</body>
+
+</html>

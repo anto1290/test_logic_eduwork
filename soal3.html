@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function stringAngka(str) {
+            let a = str.replace(/[^\w\s]/gi, '');
+            let b = a.match(/[0-9]/gi, '');
+            console.log(b.join(""))
+            for (let i = 0; i < b.length; i++) {
+                let min = i + 1;
+                let nol = b.length - min;
+                let total = '';
+                for (let y = 1; y <= nol; y++) {
+                    total += '0'
+                }
+                console.log(b[i] + total)
+            }
+
+        }
+        stringAngka("9.86-A5.321");
+    </script>
+</body>
+
+</html>

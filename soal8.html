@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function eduwork(num) {
+            for (let i = 1; i <= num; i++) {
+                let mod3 = i % 3;
+                let mod5 = i % 5;
+                if (mod3 === 0 && mod5 === 0) {
+                    console.log("Eduwork");
+                } else if (mod3 === 0 && mod5 > 0) {
+                    console.log("edu");
+                } else if (mod5 === 0 && mod3 > 0) {
+                    console.log("work");
+                } else {
+                    console.log(i);
+                }
+            }
+        }
+        eduwork(15);
+    </script>
+</body>
+
+</html>

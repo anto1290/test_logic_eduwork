@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function lowhigh(low, high, data) {
+            let nilai = [];
+            for (let i = 0; i < data.length; i++) {
+                if (data[i] >= low && data[i] <= high) {
+                    nilai.push(data[i]);
+                }
+            }
+            // soal nomor 6
+            console.log(nilai)
+            // soal nomor 7
+            console.log(nilai.length)
+        }
+        let data = [1, 4, 7, 9, 12];
+        let low = 2;
+        let high = 15;
+        lowhigh(low, high, data)
+    </script>
+</body>
+
+</html>
